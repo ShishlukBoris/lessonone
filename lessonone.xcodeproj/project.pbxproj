@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A17B8FE4265FF81F00527C34 /* lessononeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17B8FE3265FF81F00527C34 /* lessononeApp.swift */; };
+		A17B8FE4265FF81F00527C34 /* LessononeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17B8FE3265FF81F00527C34 /* LessononeApp.swift */; };
 		A17B8FE6265FF81F00527C34 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17B8FE5265FF81F00527C34 /* ContentView.swift */; };
 		A17B8FE8265FF82400527C34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A17B8FE7265FF82400527C34 /* Assets.xcassets */; };
 		A17B8FEB265FF82400527C34 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A17B8FEA265FF82400527C34 /* Preview Assets.xcassets */; };
@@ -15,7 +15,7 @@
 
 /* Begin PBXFileReference section */
 		A17B8FE0265FF81F00527C34 /* lessonone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lessonone.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A17B8FE3265FF81F00527C34 /* lessononeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lessononeApp.swift; sourceTree = "<group>"; };
+		A17B8FE3265FF81F00527C34 /* LessononeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessononeApp.swift; sourceTree = "<group>"; };
 		A17B8FE5265FF81F00527C34 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A17B8FE7265FF82400527C34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A17B8FEA265FF82400527C34 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -52,7 +52,7 @@
 		A17B8FE2265FF81F00527C34 /* lessonone */ = {
 			isa = PBXGroup;
 			children = (
-				A17B8FE3265FF81F00527C34 /* lessononeApp.swift */,
+				A17B8FE3265FF81F00527C34 /* LessononeApp.swift */,
 				A17B8FE5265FF81F00527C34 /* ContentView.swift */,
 				A17B8FE7265FF82400527C34 /* Assets.xcassets */,
 				A17B8FEC265FF82400527C34 /* Info.plist */,
@@ -79,6 +79,7 @@
 				A17B8FDC265FF81F00527C34 /* Sources */,
 				A17B8FDD265FF81F00527C34 /* Frameworks */,
 				A17B8FDE265FF81F00527C34 /* Resources */,
+				A17B8FF3265FF8AC00527C34 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -133,13 +134,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A17B8FF3265FF8AC00527C34 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"error: SwiftLint does not exist, download it from https://github.com/realm/SwiftLint\"\n  exit 1\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A17B8FDC265FF81F00527C34 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A17B8FE6265FF81F00527C34 /* ContentView.swift in Sources */,
-				A17B8FE4265FF81F00527C34 /* lessononeApp.swift in Sources */,
+				A17B8FE4265FF81F00527C34 /* LessononeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
